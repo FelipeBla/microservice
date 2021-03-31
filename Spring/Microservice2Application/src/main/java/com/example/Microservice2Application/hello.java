@@ -10,7 +10,7 @@ public class hello {
     @HystrixCommand(fallbackMethod = "defaultMessage")
     @GetMapping("/")
     public String hello() throws Exception {
-        return "coucou";
+        return "yo!";
        // throw new Exception();
     }
     public String defaultMessage() {
